@@ -11,7 +11,7 @@ module.exports = {
         secondary: '#00BFA6',
         back: '#090015',
         lighter: '#2F2E41'
-      }
+      },
     },
   },
   plugins: [],
