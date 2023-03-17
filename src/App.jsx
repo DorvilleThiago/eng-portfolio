@@ -97,21 +97,21 @@ export default function App() {
         <div style={{ width: '80%' }}>
           
             <div data-aos="fade-up" id="text-div">
-              <h1 style={{fontFamily: 'ExtraBold', lineHeight: '97%', fontSize: '4vw'}} className='select-none'>DO YOU HAVE A COLLEGE DEGREE?</h1>
-              <h2 className='select-none' style={{ fontSize: '1.2vw', marginTop: '1vw'}}>Yes! I'm a college student graduating in computer science in the university of UNIT/AL in <strong style={{fontFamily: 'ExtraBold'}} id="brazil">Brazil</strong></h2>
+              <h1 style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='select-none text-[25px] md:text-[35px]'>DO YOU HAVE A COLLEGE DEGREE?</h1>
+              <h2 className='select-none text-[14px] md:text-[18px]'>Yes! I'm a college student graduating in computer science in the university of UNIT/AL in <strong style={{fontFamily: 'ExtraBold'}} id="brazil">Brazil</strong></h2>
             </div>
             
-            <div data-aos="fade-up" style={{marginTop: '3vw'}} id="text-div">
-              <h1 className='select-none' style={{fontFamily: 'ExtraBold', lineHeight: '97%', fontSize: '4vw'}}>WHAT CAN YOU DO?</h1>  
-              <h2 className='select-none' style={{ fontSize: '1.2vw', marginTop: '1vw' }}>That's a good question!</h2>
+            <div data-aos="fade-up" className='mt-5' id="text-div">
+              <h1 className='select-none text-[25px] md:text-[35px]' style={{fontFamily: 'ExtraBold', lineHeight: '97%'}}>WHAT CAN YOU DO?</h1>  
+              <h2 className='select-none text-[14px] md:text-[18px]' style={{marginTop: '1vw' }}>That's a good question!</h2>
               <br/>
-              <h2 className='select-none' style={{ fontSize: '1.2vw', fontFamily: 'Light'}}>1. I've got experience in modern web component libraries such as <strong style={{fontFamily: 'ExtraBold'}} className='text-secondary'>Vue.js</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>React</strong>;</h2>
-              <h2 className='select-none' style={{ fontSize: '1.2vw' }}>2. I can use the latest styling stacks like SASS, <strong style={{fontFamily: 'ExtraBold', color:'#00F0FF'}}>Tailwind</strong> and Styled Components;</h2>
-              <h2 className='select-none' style={{ fontSize: '1.2vw' }}>3. I'm used to coding responsively designed websites for <strong style={{fontFamily: 'ExtraBold', color:'#00FFDE'}}>Mobile</strong> and non usual screens;</h2>
-              <h2 className='select-none' style={{ fontSize: '1.2vw' }}>4. I've done multiple projects pre-made component libraries like <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>MaterialUI</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#AD00FF'}}>Bootstrap</strong>.</h2>
+              <h2 className='select-none text-[14px] md:text-[18px]' style={{fontFamily: 'Light'}}>1. I've got experience in modern web component libraries such as <strong style={{fontFamily: 'ExtraBold'}} className='text-secondary'>Vue.js</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>React</strong>;</h2>
+              <h2 className='select-none text-[14px] md:text-[18px]'>2. I can use the latest styling stacks like SASS, <strong style={{fontFamily: 'ExtraBold', color:'#00F0FF'}}>Tailwind</strong> and Styled Components;</h2>
+              <h2 className='select-none text-[14px] md:text-[18px]'>3. I'm used to coding responsively designed websites for <strong style={{fontFamily: 'ExtraBold', color:'#00FFDE'}}>Mobile</strong> and non usual screens;</h2>
+              <h2 className='select-none text-[14px] md:text-[18px]'>4. I've done multiple projects pre-made component libraries like <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>MaterialUI</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#AD00FF'}}>Bootstrap</strong>.</h2>
             </div>
             
-            <div data-aos-offset="50" style={{width: '4vw'}}>
+            <div className='mt-5'>
               <Arrow onClick={() => ScrollDown(3)} />
             </div>
 
