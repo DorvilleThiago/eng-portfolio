@@ -54,7 +54,7 @@ export default function App() {
     <SkeletonTheme baseColor="#00BFA6" highlightColor="white">
     <main>
       
-      <section style={{ margin: '0 auto', minHeight: '600px' }} className='h-screen bg-back flex items-center justify-center'>
+      <section style={{ margin: '0 auto', minHeight: '600px', height: '100svh'}} className='bg-back flex items-center justify-center'>
         
         <div style={{width: '80%'}} className='flex flex-col-reverse md:flex-row items-center justify-between bg-back'>
 
@@ -83,7 +83,7 @@ export default function App() {
 
       </section>
       
-      <section style={{minHeight: '600px'}} className='h-screen bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
         
         <div style={{width: '80%'}}>
 
@@ -112,7 +112,7 @@ export default function App() {
 
       </section>
 
-      <section style={{minHeight: '600px'}} className='h-screen bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
         
         <div style={{ width: '80%' }}>
             <div id="text-div">
@@ -138,7 +138,7 @@ export default function App() {
 
       </section>
 
-      <section style={{minHeight: '600px', height:'100vh'}} className='bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
 
         <div className='flex flex-col' style={{ width: '80%' }}>
           
