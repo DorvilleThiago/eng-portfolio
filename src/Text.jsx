@@ -24,8 +24,8 @@ const desc_title4 = {
 }
 
 const button = {
-    eng: "GIVE IT A CLICK 🌍",
-    pt: "PODE CLICAR, VIU? 🌍"
+    eng: "GIVE IT A CLICK 🌎",
+    pt: "PODE CLICAR VIU? 🌎"
 }
 
 const title2 = {
