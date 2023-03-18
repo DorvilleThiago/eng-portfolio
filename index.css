@@ -76,3 +76,41 @@ body {
   50%  { transform: translate(0, 10px); }
   100%   { transform: translate(0, -0px); }   
 }
+
+@keyframes appear-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: ranslateX(0px);
+  }
+}
+
+@keyframes appear-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: ranslateY(0px);
+  }
+}
+
+#titulo {
+  animation-delay: 0.2s;
+  transition-timing-function: cubic-bezier(.01,.71,1,-0.11);
+  animation-name: appear-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 767px) {
+
+  #titulo {
+    animation-name: appear-up;
+  }
+
+}

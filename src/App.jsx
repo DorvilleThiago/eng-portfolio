@@ -58,7 +58,7 @@ export default function App() {
         
         <div style={{width: '80%'}} className='flex flex-col-reverse md:flex-row items-center justify-between bg-back'>
 
-          <div className='flex flex-col md:w-2/4 z-10'>
+          <div id='titulo' className='flex flex-col md:w-2/4 z-10 opacity-0'>
           
             <h1 style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='md:w-1/4 select-none text-[52px] md:text-[50px] lg:text-[70px] text-center md:text-left xl:text-[80px] 2xl:text-[94px]'>THIAGO DORVILLE</h1>
             <TypeAnimation
@@ -72,11 +72,11 @@ export default function App() {
                 "I'm a cs student",
                 1000, 
               ]} wrapper="div" cursor={true} repeat={Infinity} className='text-main select-none text-[21px] md:text-[24px] lg:text-[26px] self-center md:self-auto xl:text-[30px]' style={{ fontFamily: 'Light', letterSpacing: '-0.135em' }}/>
-              <a onClick={() => ScrollDown(1)} style={{ fontFamily: 'Bold'}}  className='mt-2 w-44 h-10 md:w-[210px] md:h-[50px] lg:w-[275px] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] 2xl:w-[325px] 2xl:h-[60px] self-center md:self-auto bg-lighter flex items-center justify-center cursor-pointer hover:bg-secondary transition-all hover:rounded-2xl active:scale-95 select-none 2xl:mt-14'>PERSONAL PROJECTS</a>
+              <a onClick={() => ScrollDown(1)} style={{ fontFamily: 'Bold'}}  className='mt-2 w-44 h-10 md:w-[210px] md:h-[50px] lg:w-[275px] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] 2xl:w-[325px] 2xl:h-[60px] self-center md:self-auto bg-lighter flex items-center justify-center cursor-pointer hover:bg-secondary transition-all hover:rounded-2xl active:scale-95 select-none 2xl:mt-14'>GIVE IT A CLICK 🌍</a>
           </div>
 
 
-            {image || <Skeleton count={5} heigh={200} width={100} />}
+            {image || <Skeleton count={4} heigh={200} width={100} />}
 
           
         </div>
@@ -93,13 +93,13 @@ export default function App() {
           </div>
 
           <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
-            <div data-aos="fade-up"  data-aos-delay="">
+            <div data-aos="fade-up"  data-aos-delay="" className='select-none'>
               <Project name="Spotify Clone" deploy="https://dorvillethiago.github.io/Animefy/" code="https://github.com/DorvilleThiago/Animefy"  src={Animefy} />
             </div>
-            <div data-aos="fade-up" data-aos-delay="50">
+            <div data-aos="fade-up" data-aos-delay="50" className='select-none'>
               <Project name="Pt-Br Dictionary" deploy="https://dorvillethiago.github.io/Dicionario/" code="https://github.com/DorvilleThiago/Dicionario" src={Dicionario} />
             </div>
-            <div data-aos="fade-up" data-aos-delay="100">
+            <div data-aos="fade-up" data-aos-delay="100" className='select-none'>
               <Project name="Landing page" deploy="https://dorvillethiago.github.io/dogs-page/" code="https://github.com/DorvilleThiago/dogs-page" src={Dogs} />
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function App() {
             <div className='mt-6' id="text-div">
               <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px]' style={{fontFamily: 'ExtraBold', lineHeight: '97%'}}>WHAT CAN YOU DO?</h1>  
               <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>That's a good question 👀</h2>
-              <br/>
+              <br className='select-none'/>
               <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]' style={{fontFamily: 'Light'}}>1. I've got experience in modern web component libraries such as <strong style={{fontFamily: 'ExtraBold'}} className='text-secondary'>Vue.js</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>React</strong>;</h2>
               <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>2. I can use the latest styling stacks like SASS, <strong style={{fontFamily: 'ExtraBold', color:'#00F0FF'}}>Tailwind</strong> and Styled Components;</h2>
               <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>3. I'm used to coding responsively designed websites for <strong style={{fontFamily: 'ExtraBold', color:'#00FFDE'}}>Mobile</strong> and non usual screens;</h2>
