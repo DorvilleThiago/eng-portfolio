@@ -54,7 +54,7 @@ export default function App() {
     <SkeletonTheme baseColor="#00BFA6" highlightColor="white">
     <main>
       
-      <section style={{ margin: '0 auto', minHeight: '600px', height: '100svh'}} className='bg-back flex items-center justify-center'>
+      <section style={{ margin: '0 auto', minHeight: '600px', height: '100dvh'}} className='bg-back flex items-center justify-center'>
         
         <div style={{width: '80%'}} className='flex flex-col-reverse md:flex-row items-center justify-between bg-back'>
 
@@ -83,7 +83,7 @@ export default function App() {
 
       </section>
       
-      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100dvh'}} className='bg-back flex flex-col items-center justify-center'>
         
         <div style={{width: '80%'}}>
 
@@ -92,7 +92,7 @@ export default function App() {
             <h2 data-aos="fade-up" style={{fontFamily: 'Light'}} className="select-none text-[14px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">Here you can check both code and deploy!</h2>
           </div>
 
-          <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-10'>
+          <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
             <div data-aos="fade-up"  data-aos-delay="">
               <Project name="Spotify Clone" deploy="https://dorvillethiago.github.io/Animefy/" code="https://github.com/DorvilleThiago/Animefy"  src={Animefy} />
             </div>
@@ -104,7 +104,7 @@ export default function App() {
             </div>
           </div>
           
-          <div className='mt-10'>
+          <div className='mt-8 md:mt-10'>
             <Arrow onClick={() => ScrollDown(2)} />
           </div>
           
@@ -112,7 +112,7 @@ export default function App() {
 
       </section>
 
-      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100dvh'}} className='bg-back flex flex-col items-center justify-center'>
         
         <div style={{ width: '80%' }}>
             <div id="text-div">
@@ -138,7 +138,7 @@ export default function App() {
 
       </section>
 
-      <section style={{minHeight: '600px', height: '100svh'}} className='bg-back flex flex-col items-center justify-center'>
+      <section style={{minHeight: '600px', height: '100dvh'}} className='bg-back flex flex-col items-center justify-center'>
 
         <div className='flex flex-col' style={{ width: '80%' }}>
           
