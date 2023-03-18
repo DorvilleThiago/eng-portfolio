@@ -88,8 +88,8 @@ export default function App() {
         <div style={{width: '80%'}}>
 
           <div>
-            <h1 data-aos="fade-up" style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='select-none text-[52px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>PERSONAL PROJECTS</h1>
-            <h2 data-aos="fade-up" style={{fontFamily: 'Light'}} className="select-none text-[18px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">Here you can check both code and deploy!</h2>
+            <h1 data-aos="fade-up" style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='select-none text-[25px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>PERSONAL PROJECTS</h1>
+            <h2 data-aos="fade-up" style={{fontFamily: 'Light'}} className="select-none text-[14px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">Here you can check both code and deploy!</h2>
           </div>
 
           <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-10'>
