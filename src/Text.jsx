@@ -35,7 +35,7 @@ const title2 = {
 
 const desc2 = {
     eng: "Here you can check both code and the hosted website!",
-    pt: "Aqui você ver o código e o site hospedado!"
+    pt: "Aqui você pode ver o código e o site hospedado!"
 }
 
 const link1 = {
