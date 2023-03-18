@@ -49,7 +49,7 @@ const link2 = {
 }
 
 const degree = {
-    eng: "DO YOU HAVE A COLLEGE DEGREE?",
+    eng: "ARE YOU IN COLLEGE?",
     pt: "VOCÊ ESTÁ EM UMA FACULDADE?"
 }
 
@@ -65,7 +65,7 @@ const oq_sei = {
 
 const oq_sei_desc = {
     eng: "Straight to the point, huh? 👀",
-    pt: "Você é direto ao ponto, hein? 👀.",
+    pt: "Direto ao ponto, hein? 👀.",
 }
 
 const oq_sei_desc2 = {
@@ -80,7 +80,7 @@ const oq_sei_desc3 = {
 
 const oq_sei_desc4 = {
     eng: (<p>3. I'm used to coding responsively designed websites for <strong style={{fontFamily: 'ExtraBold'}} className="text-main">Mobile</strong> and non usual screens;</p>),
-    pt: (<p>3. Eu estou acostumado a codar websites resposivos para <strong style={{fontFamily: 'ExtraBold'}} className="text-main">Dispositivos Móveis</strong> e telas incomuns;</p>)
+    pt: (<p>3. Eu estou acostumado a codar websites responsivos para <strong style={{fontFamily: 'ExtraBold'}} className="text-main">Dispositivos Móveis</strong> e telas incomuns;</p>)
 }
 
 const oq_sei_desc5 = {
