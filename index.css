@@ -41,19 +41,6 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-#text-div h2{
-  font-family: 'Light';
-}
-
-
-
-#brazil {
-  font-family: Bold;
-  background: -webkit-linear-gradient(yellow, rgb(0, 255, 115));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 ::-webkit-scrollbar {
   background-color: #090015;
 }
