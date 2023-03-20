@@ -24,10 +24,6 @@ import 'aos/dist/aos.css'
 
 import { TypeAnimation } from 'react-type-animation';
 
-import "./assets/fonts/JetBrainsMono-Bold.ttf"
-import "./assets/fonts/JetBrainsMono-ExtraBold.ttf"
-import "./assets/fonts/JetBrainsMono-Light.ttf"
-
 export default function App() {
 
   function EngDesc() {
@@ -42,7 +38,7 @@ export default function App() {
                   1000,
                   ReturnTextEng(Text.desc_title4),
                   1000, 
-                  ]} wrapper="div" cursor={true} repeat={Infinity} className='text-main select-none text-[21px] md:text-[24px] lg:text-[26px] self-center md:self-auto xl:text-[30px]' style={{ fontFamily: 'Light', letterSpacing: '-0.135em' }} />
+                  ]} wrapper="div" cursor={true} repeat={Infinity} className='text-main select-none text-[21px] md:text-[24px] lg:text-[26px] self-center md:self-auto xl:text-[30px] font-thin' style={{letterSpacing: '-0.135em' }} />
         )
       }
 
@@ -58,12 +54,12 @@ export default function App() {
                 1000,
                 ReturnTextBr(Text.desc_title4),
                 1000, 
-              ]} wrapper="div" cursor={true} repeat={Infinity} className='text-main select-none text-[21px] md:text-[24px] lg:text-[26px] self-center md:self-auto xl:text-[30px]' style={{fontFamily: 'Light', letterSpacing: '-0.135em'}}/>
+              ]} wrapper="div" cursor={true} repeat={Infinity} className='text-main select-none text-[21px] md:text-[24px] lg:text-[26px] self-center md:self-auto xl:text-[30px] font-thin' style={{letterSpacing: '-0.135em'}}/>
         )
       }
 
   const typing = useRef(null);
-  const [lang, setLang] = useState('en-us')
+  const [lang, setLang] = useState('')
 
   function ScrollDown(where) {
     const height = window.innerHeight;
@@ -86,12 +82,28 @@ export default function App() {
   }
 
   function ChangeLang() {
-    if (lang == "en-us") { setLang('pt-br') } else if (lang == "pt-br") { setLang("en-us") } 
+    if (lang == "en-us") {
+      localStorage.setItem('lang', 'pt-br');
+      setLang('pt-br')
+    } else if (lang == "pt-br") {
+      localStorage.setItem('lang', 'en-us');
+      setLang("en-us")
+    }
   }
 
   useEffect(() => {
     Aos.init()
-  },[])
+  }, [])
+  
+  useEffect(() => {
+    const data = localStorage.getItem('lang');
+    if (data) {
+      setLang(data);
+    } else {
+      localStorage.setItem('lang', 'en-us');
+      setLang("en-us")
+    }
+  }, []);
 
   return (
     <SkeletonTheme baseColor="#00BFA6" highlightColor="white">
@@ -108,10 +120,10 @@ export default function App() {
 
             <div id='titulo' className='flex flex-col md:w-2/4 z-10 opacity-0' ref={typing}>
             
-              <h1 style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='md:w-1/4 select-none text-[52px] md:text-[50px] lg:text-[70px] text-center md:text-left xl:text-[80px] 2xl:text-[94px]'>THIAGO DORVILLE</h1>
+              <h1 style={{lineHeight: '97%'}} className='font-black md:w-1/4 select-none text-[52px] md:text-[50px] lg:text-[70px] text-center md:text-left xl:text-[80px] 2xl:text-[94px]'>THIAGO DORVILLE</h1>
                 {lang == "pt-br" && PtDesc()}
                 {lang == "en-us" && EngDesc()}
-                <a onClick={() => ScrollDown(1)} style={{ fontFamily: 'Bold' }} className='mt-2 w-44 h-10 md:w-[210px] md:h-[50px] lg:w-[275px] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] 2xl:w-[325px] 2xl:h-[60px] self-center md:self-auto bg-lighter flex items-center justify-center cursor-pointer hover:bg-secondary transition-all hover:rounded-2xl active:scale-95 select-none 2xl:mt-14'>{ReturnText(Text.button)}</a>
+                <a onClick={() => ScrollDown(1)} className='font-bold mt-2 w-44 h-10 md:w-[210px] md:h-[50px] lg:w-[275px] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] 2xl:w-[325px] 2xl:h-[60px] self-center md:self-auto bg-lighter flex items-center justify-center cursor-pointer hover:bg-secondary transition-all hover:rounded-2xl active:scale-95 select-none 2xl:mt-14'>{ReturnText(Text.button)}</a>
             </div>
 
               
@@ -126,8 +138,8 @@ export default function App() {
           <div style={{width: '80%'}}>
 
             <div>
-              <h1 data-aos="fade-up" style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} className='select-none text-[25px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>{ReturnText(Text.title2)}</h1>
-              <h2 data-aos="fade-up" style={{fontFamily: 'Light'}} className="select-none text-[14px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
+              <h1 data-aos="fade-up" style={{ lineHeight: '97%'}} className='font-black select-none text-[25px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>{ReturnText(Text.title2)}</h1>
+              <h2 data-aos="fade-up" className="font-thin select-none text-[14px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
             </div>
 
             <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
@@ -155,18 +167,18 @@ export default function App() {
           <div style={{ width: '80%' }}>
 
           <div id="text-div">
-              <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px]' style={{fontFamily: 'ExtraBold', lineHeight: '97%'}} >{ReturnText(Text.degree)}</h1>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.degree_desc)}</h2>
+              <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px] font-black' style={{lineHeight: '97%'}} >{ReturnText(Text.degree)}</h1>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.degree_desc)}</h2>
           </div>
 
           <div className='mt-6' id="text-div">
-              <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px]' style={{fontFamily: 'ExtraBold', lineHeight: '97%'}}>{ReturnText(Text.oq_sei)}</h1>  
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc)}</h2>
+              <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px] font-black' style={{lineHeight: '97%'}}>{ReturnText(Text.oq_sei)}</h1>  
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin' >{ReturnText(Text.oq_sei_desc)}</h2>
               <br className='select-none'/>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]' style={{fontFamily: 'Light'}}>{ReturnText(Text.oq_sei_desc2)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc3)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc4)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc5)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc2)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc3)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc4)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc5)}</h2>
           </div>
 
               <div className='mt-6'>
@@ -184,7 +196,7 @@ export default function App() {
             <div className='flex flex-col md:flex-row md:justify-between'>
 
             <div className='flex flex-col'>
-              <h1 data-aos="fade-up" className='select-none text-[35px] md:text-[35px] lg:text-[53px] xl:text-[55px] 2xl:text-[75px] md:max-w-[260px] lg:max-w-none' style={{fontFamily: 'ExtraBold', lineHeight: '97%'}}>{ReturnText(Text.contato)}</h1>
+              <h1 data-aos="fade-up" className='select-none text-[35px] md:text-[35px] lg:text-[53px] xl:text-[55px] 2xl:text-[75px] md:max-w-[260px] lg:max-w-none font-black' style={{lineHeight: '97%'}}>{ReturnText(Text.contato)}</h1>
               <h2 data-aos="fade-up" className='select-none text-[15px] md:text-[20px] lg:text-[23px] xl:text-[24px] max-w-[200px] md:max-w-[250px] xl:max-w-[320px] 2xl:max-w-none'>{ReturnText(Text.social)}</h2>
             
               <div className='flex mt-3 gap-3 xl:mt-36 md:mt-16 lg:mt-12'>

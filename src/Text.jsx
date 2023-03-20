@@ -54,7 +54,7 @@ const degree = {
 }
 
 const degree_desc = {
-    eng: (<p>Yes! I'm a college student graduating in computer science in the university of UNIT/AL in <strong style={{fontFamily: 'ExtraBold'}} className="text-yellow-400">Brazil</strong></p>),
+    eng: (<p>Yes! I'm a college student graduating in computer science in the university of UNIT/AL in <strong className="text-yellow-400 font-black">Brazil</strong></p>),
     pt: "Sim! Eu sou um estudante de ciência da computação no Centro Universitário Tiradentes/UNIT"
 }
 
@@ -69,23 +69,23 @@ const oq_sei_desc = {
 }
 
 const oq_sei_desc2 = {
-    eng: (<p>1. I've got experience in modern web component frameworks such as  <strong style={{fontFamily: 'ExtraBold'}} className="text-secondary">Vue.js</strong> and <strong style={{fontFamily: 'ExtraBold',color: '#0085FF'}}>React</strong>;</p>),
-    pt: (<p>1. Eu tenho experiência com bibliotecas de componentização modernas como <strong style={{fontFamily: 'ExtraBold'}} className="text-secondary">Vue.js</strong> e <strong style={{fontFamily: 'ExtraBold',color: '#0085FF'}}>React</strong>;</p>)
+    eng: (<p>1. I've got experience in modern web component frameworks such as  <strong className="text-secondary font-black">Vue.js</strong> and <strong style={{color: '#0085FF'}} className="font-black">React</strong>;</p>),
+    pt: (<p>1. Eu tenho experiência com bibliotecas de componentização modernas como <strong className="text-secondary font-black">Vue.js</strong> e <strong style={{ color: '#0085FF' }} className="font-black">React</strong>;</p>)
 }
 
 const oq_sei_desc3 = {
-    eng: (<p>2. I can use the latest styling stacks like SASS, <strong style={{fontFamily: 'ExtraBold', color: '#00F0FF'}}>Tailwind</strong> and Styled Components;</p>),
-    pt: (<p>2. Eu posso usar as stacks de estilização mais recentes como SASS, <strong style={{fontFamily: 'ExtraBold', color: '#00F0FF'}}>Tailwind</strong> e Styled Components;</p>)
+    eng: (<p>2. I can use the latest styling stacks like SASS, <strong className="font-black" style={{color: '#00F0FF'}}>Tailwind</strong> and Styled Components;</p>),
+    pt: (<p>2. Eu posso usar as stacks de estilização mais recentes como SASS, <strong style={{color: '#00F0FF'}} className="font-black">Tailwind</strong> e Styled Components;</p>)
 }
 
 const oq_sei_desc4 = {
-    eng: (<p>3. I'm used to coding responsively designed websites for <strong style={{fontFamily: 'ExtraBold'}} className="text-main">Mobile</strong> and non usual screens;</p>),
-    pt: (<p>3. Eu estou acostumado a codar websites responsivos para <strong style={{fontFamily: 'ExtraBold'}} className="text-main">Dispositivos Móveis</strong> e telas incomuns;</p>)
+    eng: (<p>3. I'm used to coding responsively designed websites for <strong className="text-main font-black">Mobile</strong> and non usual screens;</p>),
+    pt: (<p>3. Eu estou acostumado a codar websites responsivos para <strong className="text-main font-black">Dispositivos Móveis</strong> e telas incomuns;</p>)
 }
 
 const oq_sei_desc5 = {
-    eng: (<p>4. I've done multiple projects with pre-made component libraries like <strong style={{fontFamily:'ExtraBold', color: '#0085FF'}}>MaterialUI</strong> and <strong style={{fontFamily: 'ExtraBold', color: '#AD00FF'}}>Bootstrap</strong>.</p>),
-    pt: (<p>4. Eu tenho experiência com bibliotecas de componentes prontos pra uso como  <strong style={{fontFamily: 'ExtraBold', color: '#0085FF'}}>MaterialUI</strong> e <strong style={{fontFamily: 'ExtraBold', color: '#AD00FF'}}>Bootstrap</strong>.</p>)
+    eng: (<p>4. I've done multiple projects with pre-made component libraries like <strong style={{color: '#0085FF'}} className="font-black">MaterialUI</strong> and <strong className="font-black" style={{color: '#AD00FF'}}>Bootstrap</strong>.</p>),
+    pt: (<p>4. Eu tenho experiência com bibliotecas de componentes prontos pra uso como  <strong style={{color: '#0085FF'}} className="font-black">MaterialUI</strong> e <strong className="font-black" style={{color: '#AD00FF'}}>Bootstrap</strong>.</p>)
 }
 
 const contato = {
