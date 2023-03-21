@@ -93,6 +93,10 @@ export default function App() {
 
   useEffect(() => {
     Aos.init()
+    const el = document.querySelector(".loader-container");
+    if (el) {
+      el.remove();
+    }
   }, [])
   
   useEffect(() => {
@@ -168,17 +172,17 @@ export default function App() {
 
           <div id="text-div">
               <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px] font-black' style={{lineHeight: '97%'}} >{ReturnText(Text.degree)}</h1>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.degree_desc)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.degree_desc)}</h2>
           </div>
 
           <div className='mt-6' id="text-div">
               <h1 data-aos="fade-up" className='select-none text-[25px] md:text-[35px] lg:text-[45px] xl:text-[55px] 2xl:text-[80px] font-black' style={{lineHeight: '97%'}}>{ReturnText(Text.oq_sei)}</h1>  
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin' >{ReturnText(Text.oq_sei_desc)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]' >{ReturnText(Text.oq_sei_desc)}</h2>
               <br className='select-none'/>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc2)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc3)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc4)}</h2>
-              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-thin'>{ReturnText(Text.oq_sei_desc5)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc2)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc3)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc4)}</h2>
+              <h2 data-aos="fade-up" className='select-none text-[14px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]'>{ReturnText(Text.oq_sei_desc5)}</h2>
           </div>
 
               <div className='mt-6'>
