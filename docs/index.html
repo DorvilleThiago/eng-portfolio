@@ -12,7 +12,7 @@
 
     <style>
       .loader {
-        border: 16px solid #dbdbe3;
+        border: 16px solid #2F2E41;
         border-top: 16px solid #00FFDE;
         border-radius: 50%;
         width: 50px;
@@ -20,12 +20,15 @@
         animation: spin 2s linear infinite;
       }
       .loader-container {
-        height: 97svh;
+        background-color: #090015;
+        height: 100svh;
         margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #090015;
+      }
+      body {
+        margin: 0;
       }
       
       @keyframes spin {
@@ -40,9 +43,10 @@
     <link rel="stylesheet" href="/assets/index-55ee5edd.css">
   </head>
   <body>
-    
+  
     <div id="root"></div>
     
+  
     <div class="loader-container">
       <div class="loader"></div>
     </div>
