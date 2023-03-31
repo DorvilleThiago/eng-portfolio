@@ -60,6 +60,7 @@ export default function App() {
 
   const typing = useRef(null);
   const [lang, setLang] = useState('')
+  const [loaded, setLoaded] = useState(false);
 
   function ScrollDown(where) {
     const height = window.innerHeight;
@@ -93,10 +94,9 @@ export default function App() {
 
   useEffect(() => {
     Aos.init()
-    const el = document.querySelector(".loader-container");
-    if (el) {
-      el.remove();
-    }
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1400);
   }, [])
   
   useEffect(() => {
@@ -109,9 +109,19 @@ export default function App() {
     }
   }, []);
 
+  if (!loaded) {
+ 
+  return (
+    <div className="loaderContainer">
+      <div className='loader'></div>
+    </div>
+    )
+  
+  } else {
+
   return (
     <SkeletonTheme baseColor="#00BFA6" highlightColor="white">
-      <main>
+      <main className='componente'>
       
         <button onClick={() => ChangeLang()} className='absolute bg-lighter top-5 left-5 flex flex-row items-center pl-3 pr-3 z-20 hover:bg-secondary transition-all'>
             <img src={Lang} className="w-15 h-10 text-white mr-3" alt='' />
@@ -143,7 +153,7 @@ export default function App() {
 
             <div>
               <h1 data-aos="fade-up" style={{ lineHeight: '97%'}} className='font-black select-none text-[25px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>{ReturnText(Text.title2)}</h1>
-              <h2 data-aos="fade-up" className="font-thin select-none text-[14px] md:text-[24.5px] lg:text-[25px] leading-5 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
+              <h2 data-aos="fade-up" className="select-none text-[14px] md:text-[24.5px] lg:text-[30px] font-thin leading-4 md:leading-6 lg:leading-8 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
             </div>
 
             <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
@@ -230,5 +240,6 @@ export default function App() {
 
       </main>
       </SkeletonTheme>
-  )
+    )
+  }
 }
