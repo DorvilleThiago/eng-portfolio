@@ -158,10 +158,10 @@ export default function App() {
 
             <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
               <div data-aos="fade-up"  data-aos-delay="" className='select-none'>
-                <Project code_name={ReturnText(Text.link1)} deploy_name={ReturnText(Text.link2)} name="Spotify Clone" deploy="https://dorvillethiago.github.io/Animefy/" code="https://github.com/DorvilleThiago/Animefy"  src={Animefy} />
+                <Project code_name={ReturnText(Text.link1)} deploy_name={ReturnText(Text.link2)} name="Pt-Br Dictionary" deploy="https://dorvillethiago.github.io/Dicionario/" code="https://github.com/DorvilleThiago/Dicionario" src={Dicionario} />
               </div>
               <div data-aos="fade-up" data-aos-delay="50" className='select-none'>
-                <Project code_name={ReturnText(Text.link1)} deploy_name={ReturnText(Text.link2)} name="Pt-Br Dictionary" deploy="https://dorvillethiago.github.io/Dicionario/" code="https://github.com/DorvilleThiago/Dicionario" src={Dicionario} />
+                <Project code_name={ReturnText(Text.link1)} deploy_name={ReturnText(Text.link2)} name="Spotify Clone" deploy="https://dorvillethiago.github.io/Animefy/" code="https://github.com/DorvilleThiago/Animefy"  src={Animefy} />
               </div>
               <div data-aos="fade-up" data-aos-delay="100" className='select-none'>
                 <Project code_name={ReturnText(Text.link1)} deploy_name={ReturnText(Text.link2)} name="Landing page" deploy="https://dorvillethiago.github.io/dogs-page/" code="https://github.com/DorvilleThiago/dogs-page" src={Dogs} />
