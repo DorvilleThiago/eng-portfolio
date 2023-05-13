@@ -153,7 +153,7 @@ export default function App() {
 
             <div>
               <h1 data-aos="fade-up" style={{ lineHeight: '97%'}} className='font-black select-none text-[25px] md:text-[58px] lg:text-[72px] xl:text-[80px] 2xl:text-[94px]'>{ReturnText(Text.title2)}</h1>
-              <h2 data-aos="fade-up" className="select-none text-[14px] md:text-[24.5px] lg:text-[30px] font-thin leading-4 md:leading-6 lg:leading-8 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
+              <h2 data-aos="fade-up" className="select-none text-[14px] md:text-[24.5px] lg:text-[30px] leading-4 md:leading-6 lg:leading-8 w-[250px] md:w-auto">{ReturnText(Text.desc2)}</h2>
             </div>
 
             <div className='flex flex-col md:flex-row gap-3 md:gap-7 mt-8 md:mt-10'>
