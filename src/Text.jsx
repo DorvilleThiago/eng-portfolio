@@ -4,23 +4,23 @@ const lang = {
 }
 
 const desc_title = {
-    eng: "I'm a web developer",
-    pt: "Eu sou um web developer",
+    eng: "FullStack Developer",
+    pt: "Desenvolvedor FullStack",
 }
 
 const desc_title2 = {
-    eng: "I'm a frontend developer",
-    pt: "Eu sou um dev frontend",
+    eng: "FrontEnd Developer",
+    pt: "Desenvolvedor FrontEnd",
 }
 
 const desc_title3 = {
-    end: "I'm a programmer",
-    pt: "Eu sou um programador",
+    end: "BackEnd Developer",
+    pt: "Desenvolvedor BackEnd",
 }
 
 const desc_title4 = {
-    eng: "I'm a cs student",
-    pt: "Eu sou um universitário",
+    eng: "Computer Science Student",
+    pt: "Universitário",
 }
 
 const button = {
